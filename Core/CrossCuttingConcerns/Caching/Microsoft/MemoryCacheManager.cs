@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.RegularExpressions;
 using System.Linq;
@@ -11,7 +10,6 @@ namespace Core.CrossCuttingConcerns.Caching.Microsoft
 {
     public class MemoryCacheManager : ICacheManager
     {
-        //Adapter Pattern
         IMemoryCache _memoryCache;
 
         public MemoryCacheManager()
@@ -63,8 +61,6 @@ namespace Core.CrossCuttingConcerns.Caching.Microsoft
             {
                 _memoryCache.Remove(key);
             }
-            //23:15 DERSTEYİZ
-            //PUSH BASTIM :)
         }
     }
 }

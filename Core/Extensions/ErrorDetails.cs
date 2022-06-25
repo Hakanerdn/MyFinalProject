@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using FluentValidation.Results;
 using Newtonsoft.Json;
 
@@ -20,6 +18,4 @@ namespace Core.Extensions
     {
         public IEnumerable<ValidationFailure> Errors { get; set; }
     }
-
-
 }
